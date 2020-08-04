@@ -49,7 +49,7 @@ public class CustomArrayList<T> implements CustomList<T> {
 		Object[] resizedArray = new Object[size];
 		resizedArray[index] = item;
 		int counter = 0;
-		for (int i = 0; i < items.length; i++) {
+		for (int i = 0; i < this.getSize(); i++) {
 			if (resizedArray[i] == null) {
 				resizedArray[i] = items[counter++];
 			}
